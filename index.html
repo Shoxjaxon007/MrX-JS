@@ -96,11 +96,12 @@
  </div>
 
  <script>
-    var colorArray = ["#00FF00", "#FFD700", "#8B008B", "#FF0000", "#fdbb2d"];
-var i = 0;
+    var colorArray = ["https://static.vecteezy.com/system/resources/previews/003/559/330/original/abstract-background-with-gradient-blue-bubble-free-vector.jpg","https://e0.pxfuel.com/wallpapers/1021/875/desktop-wallpaper-digital-art-neon-bubbles-abstract-gradient-background-3bcbc6-neon-gradient.jpg", "https://cdn.pixabay.com/photo/2017/03/25/17/55/colorful-2174045_1280.png", "https://png.pngtree.com/background/20210716/original/pngtree-abstract-gradient-purpel-color-crystal-background-picture-image_1391210.jpg", "https://i.pinimg.com/originals/0b/74/c0/0b74c05db0fac082df3061b836f170a1.jpg"];
+    var i = 0;
 
 function changeColor(){
-    document.body.style.background = colorArray[i];
+    document.body.style.backgroundImage= 'url(' + colorArray[i] + ')';
+    console.log(i)
     i++;
     if( i >= colorArray.length) {
         i = 0;
