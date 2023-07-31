@@ -65,7 +65,7 @@
 
 .btn6{
     color: #232323;
-    background-color:lawngreen;
+    background-color:blanchedalmond;
     border: 1px solid #232323;
     position: relative;
     font-size: 14px;
@@ -126,4 +126,8 @@
     padding: 17px 34px 17px 39px;
     transition: .2s ease-in-out;
     cursor: pointer;
+}
+
+.div{
+    text-align: center;
 }
