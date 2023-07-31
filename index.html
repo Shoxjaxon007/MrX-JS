@@ -69,10 +69,26 @@
     outline: none;
 }
 
+.name{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: white;
+}
+
 
  </style>
 </head>
 <body>
+
+    <h1>Ismingizni ko'rmoqchi bo'lsangiz pastga qarang</h1>
+
+    <div class="name"></div>
+</div>
+
+<div class="div">
+    <button class="gradient-button" onclick="promptName()">meni bosing</button>
+</div>
+
 <div class="div">
     <button onclick="alert('1chi buttonga bostingiz')" class="btn">1</button>
     <button onclick="alert('2chi buttonga bostingiz')" class="btn2">2</button>
@@ -117,6 +133,16 @@ function changeColor(){
 //         alert("Birnchi buttonga bostingiz")
 //     )
 // }
+
+function promptName() {
+        var name =prompt("What is your name?");
+        if (name == "MrX"){
+            document.querySelector(".name").innerHTML =name;
+        } else{
+            document.querySelector(".name").innerHTML ="kiritilgan qiymat MrX emas";
+        }
+    }
+
  </script>
 
  <script src="app.js"></script>
